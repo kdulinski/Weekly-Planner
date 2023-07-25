@@ -1,0 +1,15 @@
+.add-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display:inline-block;
+    margin-top: 2vh;
+    background:
+    linear-gradient(#fff 0 0),
+    linear-gradient(#fff 0 0),
+    darkcyan;
+    background-position:center;
+    background-size: 50% 3px,3px 50%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;  
+    cursor: pointer;
+}
