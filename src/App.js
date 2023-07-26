@@ -2,14 +2,34 @@ import Week from "./components/Week";
 import Day from "./components/Day";
 import Event from "./components/Event";
 import AddButton from "./components/AddButton";
+import NewEvent from "./components/NewEvent";
+import { useState } from "react";
 
 function App() {
+  const [changedDescription, setChangedDescription] = useState("");
+  const [changedTitle, setChangedTitle] = useState("");
+
+  function titleChangeHandler(event) {
+    setChangedTitle(event.target.value);
+  }
+
+  function descriptionChangeHandler(event) {
+    setChangedDescription(event.target.value);
+  }
+
   return (
     <div className="App">
+      <NewEvent
+        onTitleChange={titleChangeHandler}
+        onDescriptionChange={descriptionChangeHandler}
+      ></NewEvent>
       <Week>
         <Day dayName="monday">
-          <Event />
-          <Event />
+          <Event title={changedTitle} description={changedDescription} />
+          <Event
+            title={"Event title"}
+            description={"That's a event description."}
+          />
           <AddButton />
         </Day>
         <Day dayName="tuesday"></Day>

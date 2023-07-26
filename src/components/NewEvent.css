@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+.modal-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: white;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    width: 25vw; 
+    border-radius: 5px;
+}
+
+.modal label {
+    margin-top: 3vh;
+}
+
+.modal h1 {
+    font-family: 'Amatic SC', cursive;
+}

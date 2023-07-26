@@ -1,10 +1,10 @@
 import "./Event.css";
 
-function Event() {
+function Event(props) {
   return (
     <div className="event">
-      <h3>Event name</h3>
-      <p> Event description - more text about event.</p>
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
     </div>
   );
 }
