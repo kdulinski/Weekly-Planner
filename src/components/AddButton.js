@@ -1,11 +1,7 @@
 import "./AddButton.css";
 
-function AddButton() {
-  function clickHandler() {
-    alert("Button was clicked!");
-  }
-
-  return <div className="add-button" onClick={clickHandler}></div>;
+function AddButton(props) {
+  return <div className="add-button" onClick={props.onButtonClick}></div>;
 }
 
 export default AddButton;

@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
-.modal-background {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal {
+.new-event {
     background-color: white;
     padding: 3vh;
     display: flex;
@@ -21,10 +9,35 @@
     border-radius: 5px;
 }
 
-.modal label {
+.new-event label {
     margin-top: 3vh;
 }
 
-.modal h1 {
+.new-event h1 {
     font-family: 'Amatic SC', cursive;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button {
+  background-color: darkcyan;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+button:hover {
+  background-color: rgba(0, 139, 139, 0.8);
+  transition-duration: 0.1s;
 }
