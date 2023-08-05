@@ -16,9 +16,12 @@ function NewEvent(props) {
   function submitHandler(event) {
     event.preventDefault();
     const postData = {
+      key: props.keyValue,
+      day: props.day,
       title: changedTitle,
       description: changedDescription,
     };
+
     props.onAddEvent(postData);
     props.onCancel();
   }
